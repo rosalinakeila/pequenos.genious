@@ -53,16 +53,36 @@ section {
     background-color: #89C2D9;
 }
 /* Footer styling */
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the height of the wrapper to fill the viewport */
+html, body {
+    height: 100%;
+}
+
+/* Wrapper as a flex container */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content grows to take available space */
+main {
+    flex: 1;
+}
+
+/* Footer styling */
 footer {
-    background-color: #0C121D;
-    padding: 20px 0;
+    background-color: #333;
+    color: white;
     text-align: center;
-}
-.footer-text {
-    color: aquamarine;
-}
-a {
-    text-decoration: none;
+    padding: 10px 0;
 }
 
 /* карусель дизайн */
