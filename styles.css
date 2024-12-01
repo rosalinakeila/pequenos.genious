@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+/* Add this to ensure full height for the body and html */
+html,body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    font-family: Michroma, serif;
+    background: #e5f8ff;
+}
+/* Make the main content section take the remaining space */
+section {
+    flex: 1;
+}
+/* дизайн верхней панели */
+.nav-link {
+    color: aquamarine;
+}
+.navbar-nav .nav-link.active {
+    color: rgb(184, 189, 187);
+}
+.navbar-brand img {
+    width: 60px;
+}
+.navbar-toggler {
+    background-color: rgb(184, 189, 187);
+}
+/* смена главного блока */
+.double-size {
+    font-size: 2em;         /* Double the font size */
+    padding: 2rem;          /* Increase padding for better spacing */
+    line-height: 1.5;       /* Adjust line-height for readability */
+    background-color: #f9f9f9;  /* Optional: a light background for emphasis */
+    border-radius: 8px;     /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
+}
+/* дизай основных блоков */
+.container {
+    display: block;
+    text-align: center;
+    background-color: #A3C5F1;
+    width: 80%;
+    margin: 0 auto;
+}
+.card-body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #89C2D9;
+}
+/* Footer styling */
+footer {
+    background-color: #0C121D;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-text {
+    color: aquamarine;
+}
+a {
+    text-decoration: none;
+}
+
+/* карусель дизайн */
+.carousel-inner {
+    width: 100%;
+    height: 800px;
+    /* Set a fixed height for the carousel */
+}
+.carousel-image {
+    object-fit: cover;
+    /* Ensures the image covers the carousel area */
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption a {
+    color: aquamarine;
+}
+/* Center carousel images and define fixed height and width */
+.carousel-inner {
+    width: 100%;
+    height: 700px;
+    /* Set desired height for the carousel */
+    display: flex;
+    align-items: center;
+}
+.carousel-caption h5 {
+    position: center;
+    top: 1em; /* чтобы текст находился выше трех полос в каруселе*/
+}
+
+/* смена размера текста в каруселе 
+Show the h5 text on small screens (phones and smaller tablets) */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        display: block;
+    }
+}
+/* раздиление между каруселю и футером */
+section {
+    margin-bottom: 50px; /* Adjust the value as needed */
+}
