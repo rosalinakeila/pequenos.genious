@@ -94,8 +94,8 @@ footer {
 }
 .carousel-image {
     object-fit: cover;
-  width: 150px;
-  height: 150px;
+  width: 650px;
+  height: 650px;
 
 }
 .carousel-caption a {
@@ -110,6 +110,7 @@ footer {
     align-items: center;
 }
 .carousel-caption h5 {
+     text-decoration: none;
     position: center;
     top: 2em; /* чтобы текст находился выше трех полос в каруселе*/
 }
