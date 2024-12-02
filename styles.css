@@ -89,25 +89,19 @@ footer {
 /* карусель дизайн */
 .carousel-inner {
     width: 100%;
-    height: 650px;
+    height: 100%;
     /* Set a fixed height for the carousel */
+    display: flex;
+    align-items: center;
 }
 .carousel-image {
   object-fit: cover;
-  width: 650px;
-  height: 650px;
+  width: 100%;
+  height: 100%;
 
 }
 .carousel-caption a {
     color: aquamarine;
-}
-/* Center carousel images and define fixed height and width */
-.carousel-inner {
-    width: 100%;
-    height: 650px;
-    /* Set desired height for the carousel */
-    display: flex;
-    align-items: center;
 }
 .carousel-caption h5 {
      text-decoration: none;
